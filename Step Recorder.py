@@ -52,10 +52,10 @@ def Start():
         if mouse_listener is None or not mouse_listener.is_alive():
             mouse_listener = mouse.Listener(on_click=on_click, on_scroll=on_scroll)
             mouse_listener.start()
-            
-        elif mouse_listener is not None and mouse_listener.is_alive():
-            mouse_listener.stop()
-            mouse_listener = None
+            os.system("pause")
+        # elif mouse_listener is not None and mouse_listener.is_alive():
+        #     mouse_listener.stop()
+        #     mouse_listener = None
 # endregion
 
 # region Stop and Review
